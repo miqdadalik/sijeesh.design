@@ -1,0 +1,7 @@
+$link_color: #00A9CE; 
+a {
+    color: $link_color;
+    &:hover {
+        color: $link_color;
+    }
+}
