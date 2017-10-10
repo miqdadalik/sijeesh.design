@@ -1,21 +1,21 @@
 {
-  "name": "assignment",
+  "name": "sijeesh",
   "version": "1.0.0",
-  "description": "",
+  "description": "sijeesh.design",
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/miqdadalik/assignment-dubai.git"
+    "url": "https://github.com/miqdadalik/sijeesh.design.git"
   },
   "author": "Miqdad Ali",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/miqdadalik/assignment-dubai/issues"
+    "url": "https://github.com/miqdadalik/sijeesh.design/issues"
   },
-  "homepage": "https://github.com/miqdadalik/assignment-dubai#readme",
+  "homepage": "https://github.com/miqdadalik/sijeesh.design#readme",
   "scripts": {
     "start": "webpack --watch",
     "build": "webpack -p"

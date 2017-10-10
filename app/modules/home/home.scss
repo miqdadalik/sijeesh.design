@@ -1,3 +1,12 @@
+$violet: #C724B1;
+$blue: #00A9CE;
+$navy: #00205B;
+$black: #666666;
+$white: #FFF;
+
+body {
+    font-family: 'Quicksand', sans-serif;
+}
 .top-breadcrumb {
     margin: 0;
     padding: 0;
@@ -10,7 +19,7 @@
         }
         &:before {
             padding: 8px;
-            color: #000;
+            color: $black;
             content: '>';
             font-weight: bold;
         }
@@ -19,6 +28,20 @@
                 content: '';
                 padding: 0;
             }
+        }
+    }
+}
+
+header {
+    font-family: 'Comfortaa', cursive;
+    color: $blue;
+    .header-title {
+        padding: 1em;
+        float: left;
+        background: #F7F7F7;
+        border-radius: 0 10px 10px 0;
+        h1 {
+            font-weight: 700;
         }
     }
 }
