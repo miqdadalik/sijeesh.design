@@ -1,7 +1,86 @@
-$link_color: #00A9CE; 
-a {
-    color: $link_color;
-    &:hover {
-        color: $link_color;
+.hero-sliders .hero-slider .hero-sliders-item {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    width: 100%;
+}
+.hero-sliders .hero-slider .hero-sliders-item .bg-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+}
+
+.hero-sliders .hero-slider .hero-sliders-item .hero-content-wrapper {
+    display: table;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+.hero-sliders .hero-slider .hero-sliders-item .hero-content-wrapper .hero-content {
+    display: table-cell;
+    width: 100%;
+    height: 100vh;
+    vertical-align: middle;
+}
+
+.first-slider {
+    background: url(./img/banner.png);
+    background-size: cover;
+    background-position: 20%;
+}
+
+.first-slider .bg-overlay,
+.hero-image-slider .bg-overlay {
+    background: rgba(17, 17, 17, 0.3);
+}
+
+.first-slider .hero-content,
+.hero-image-slider .hero-content {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.first-slider .hero-content h1,
+.hero-image-slider .hero-content h1 {
+    margin-bottom: 80px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    color: #ececec;
+    font-size: 1em;
+    letter-spacing: 0;
+    @media (min-width: 992px){
+        font-size: 3em;
+        letter-spacing: 0;
     }
+}
+
+.first-slider .hero-content h4,
+.hero-image-slider .hero-content h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 2em;
+    color: #FFF;
+    letter-spacing: 3px;
+    @media (min-width: 992px){
+        font-size: 6em;
+        letter-spacing: 3px;
+    }
+}
+.first-slider .hero-content h4 a,
+.hero-image-slider .hero-content h4 a {
+    font-family: 'Montserrat', sans-serif;
+    color: #999;
+    font-weight: 400;
+    text-transform: none;
+    letter-spacing: 1px;
+}
+
+footer {
+    background: #000;
+    padding: 2em;
 }

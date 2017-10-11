@@ -1,47 +1,151 @@
-$violet: #C724B1;
-$blue: #00A9CE;
-$navy: #00205B;
-$black: #666666;
-$white: #FFF;
-
 body {
-    font-family: 'Quicksand', sans-serif;
-}
-.top-breadcrumb {
+    font-family: 'Muli', sans-serif;
     margin: 0;
     padding: 0;
-    list-style-type: none;
-    li {
-        display: inline-block;
-        a,
-        span  {
-            font-size: 12px;
+}
+h1, h2, h3,
+h4, h5, h6,
+p, span, a {
+    font-family: 'Muli', sans-serif;
+}
+.no-margin {
+    margin: 0;
+}
+.no-padding {
+    padding: 0;
+}
+.line {
+    width: 44px;
+    height: 4px;
+    background: #FFCC00;
+    margin-bottom: 20px;
+}
+.hero-header {
+    width: 100%;
+    padding: 2em;
+    h3 {
+        color: #FFF;
+        font-size: 1.5rem;
+        span {
+            color:#FFCC00;
         }
-        &:before {
-            padding: 8px;
-            color: $black;
-            content: '>';
-            font-weight: bold;
+    }
+}
+.hero-content {
+    h3 {
+        font-size: 1.18rem;
+        letter-spacing: 2px;
+        color: #fff;
+        padding-left: 0;
+        text-align: left;
+        margin-bottom: 10px;
+    }
+}
+
+.section-quote {
+    padding: 5em 0 7em;
+    blockquote {
+        padding: 5em 0 1em 2.5em;
+        @media (min-width: 992px){
+            padding: 5em 0 1em 3em;
         }
-        &:first-child {
-            &:before {
-                content: '';
-                padding: 0;
+    }
+    h1 {
+        position: relative;
+        font-size: 2rem;
+        @media (min-width: 992px){
+            font-size: 3.5rem;
+        }
+        font-weight: bold;
+        .quote-left {
+            position: absolute;
+            background: url('../../img/quote-left.png') no-repeat;
+            background-size: cover;
+            width: 50px;
+            height: 40px;
+            left: -50px;
+            top: -20px;
+            @media (min-width: 992px){
+                left: -75px;
+                width: 62px;
+                height: 48px;
+            }
+        }
+        .quote-right {
+            position: absolute;
+            background: url('../../img/quote-right.png') no-repeat;
+            background-size: cover;
+            width: 50px;
+            height: 40px;
+            right: 0px;
+            top: -25px;
+            @media (min-width: 992px){
+                width: 62px;
+                height: 48px;
+                right: 5px;
+                top: -25px;
             }
         }
     }
-}
-
-header {
-    font-family: 'Comfortaa', cursive;
-    color: $blue;
-    .header-title {
-        padding: 1em;
-        float: left;
-        background: #F7F7F7;
-        border-radius: 0 10px 10px 0;
-        h1 {
-            font-weight: 700;
+    h5 {
+        padding: 0 0 1em 2.7em;
+        @media (min-width: 992px){
+            padding: 0 0 1em 3em;
+        }
+        font-size: 12pt;
+    }
+    img {
+        max-width: 100%;
+        height: 350px;
+        @media (min-width: 992px){
+            float: right;
         }
     }
+}
+.section-info {
+    background: #F8F7F9;
+    padding: 3em 1em 2em;
+    .box {
+        background: #FFF;
+        padding: 3em 2em 2em;
+        margin: 1em 0 1em;
+        @media (min-width: 992px){
+            padding: 3em 3em 2em;
+        }
+    }
+    p {
+        color: #969696;
+        font-size: 12pt;
+        line-height: 18pt;
+    }
+    h3 {
+        color: #4c4a4a;
+        font-size: 36pt;
+        margin-top: 26pt;
+    }
+}
+.section-about {
+    background: #FFF;
+    padding: 6em 1em;
+    @media (min-width: 992px){
+        padding: 6em 4em;
+    }
+    h3 {
+        text-align: center;
+        font-weight: bold;
+    }
+    p {
+        display: block;
+        font-size: 1.18rem;
+        color:#9B9B9B;
+        text-align: center;
+        margin-top: 4em;
+        line-height: 20pt;
+    }
+}
+footer {
+    width: 100%;
+    height: 6px;
+    background: #FFCC00;
+    padding: 0;
 }
